@@ -2,14 +2,13 @@
 " GENERAL SETTINGS
 "===================================================================================
 
-call pathogen#infect()
+"call pathogen#infect()
 
 set nocompatible
 
-filetype  plugin on
-filetype  indent on
+"filetype  plugin on filetype  indent on
 
-set ofu=syntaxcomplete#Complete
+"set ofu=syntaxcomplete#Complete
 "
 "-------------------------------------------------------------------------------
 " Switch syntax highlighting on.
@@ -81,17 +80,7 @@ colorscheme wombat
 if has("autocmd")
   autocmd BufEnter * :lchdir %:p:h
 endif
-"
-"-------------------------------------------------------------------------------
-" Fast switching between buffers
-" The current buffer will be saved before switching to the next one.
-" Choose :bprevious or :bnext
-"-------------------------------------------------------------------------------
- noremap  <silent> <s-tab>       :if &modifiable && !&readonly && 
-     \                      &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-inoremap  <silent> <s-tab>  <C-C>:if &modifiable && !&readonly && 
-     \                      &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-"
+
 "-------------------------------------------------------------------------------
 " When editing a file, always jump to the last known cursor position.
 " Don't do it when the position is invalid or when inside an event handler
