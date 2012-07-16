@@ -20,15 +20,7 @@ myConfig =  defaultConfig
 	, layoutHook = layoutHook'
 }
 	
-
-tabTheme1 = defaultTheme { decoHeight = 16
-                         , activeColor = "#a6c292"
-                         , activeBorderColor = "#a6c292"
-                         , activeTextColor = "#000000"
-                         , inactiveBorderColor = "#000000"
-                         }
-
-layoutHook' = mtile ||| tab ||| full
+layoutHook' = mtile ||| full
   where
     rt = ResizableTall 1 (2/100) (1/2) []
     mtile = renamed [Replace "M[]="] $ smartBorders $ Mirror rt
