@@ -6,7 +6,9 @@
 
 set nocompatible
 
-"filetype  plugin on filetype  indent on
+filetype  plugin on
+filetype	on
+filetype  indent on
 
 "set ofu=syntaxcomplete#Complete
 "
