@@ -32,6 +32,5 @@ layoutHook' = mtile ||| tab ||| full
   where
     rt = ResizableTall 1 (2/100) (1/2) []
     mtile = renamed [Replace "M[]="] $ smartBorders $ Mirror rt
-    tab = renamed [Replace "T"] $ noBorders $ tabbed shrinkText tabTheme1
     full = renamed [Replace "[]"] $ noBorders Full 
 
