@@ -20,7 +20,7 @@ myConfig =  defaultConfig
 	, layoutHook = layoutHook'
 }
 	
-layoutHook' = mtile ||| full
+layoutHook' = full ||| mtile
   where
     rt = ResizableTall 1 (2/100) (1/2) []
     mtile = renamed [Replace "M[]="] $ smartBorders $ Mirror rt
