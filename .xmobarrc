@@ -12,8 +12,9 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
                     , Run Swap [] 20
                     , Run Date "%a %b %_d %Y %H:%M" "date" 20
 										, Run BatteryP ["BAT0"] ["-t","<left>% / <timeleft>"] 600
+										, Run Kbd [] 
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% %cpu% | %memory% * %swap% | %eth0% - %wlan0% }{ %EDVE% | %battery% | <fc=#ee9a00>%date%</fc>"
+       , template = "%StdinReader% %cpu% | %memory% * %swap% | %eth0% - %wlan0% }{ %EDVE% %kbd% | %battery% | <fc=#ee9a00>%date%</fc>"
        }
