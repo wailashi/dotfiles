@@ -70,7 +70,7 @@ set completeopt=menu,menuone,longest " Disable preview scratch window in clang_c
 set pumheight=15 								" Limit popup menu height
 
 set background=dark
-colorscheme wombat
+colorscheme solarized
 "
 "===================================================================================
 " BUFFERS, WINDOWS
