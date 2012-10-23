@@ -1,6 +1,6 @@
-Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
-       , bgColor = "black"
-       , fgColor = "grey"
+Config { font = "xft:inconsolata:size=10:antialias=true"
+       , bgColor = "#002b36"
+       , fgColor = "#657b83"
        , position = Top
        , lowerOnStart = True
        , commands = [ Run StdinReader
@@ -8,12 +8,11 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
                     , Run Network "wlan0" ["-L","0","-H","32","--normal","green","--high","red"] 20
                     , Run Cpu ["-p","3","-L","3","-H","50","--normal","green","--high","red"] 20
                     , Run Memory ["-t","Mem: <usedratio>%"] 20
-                    , Run Swap [] 20
                     , Run Date "%a %b %_d %Y %H:%M" "date" 20
 										, Run BatteryP ["BAT0"] ["-t","<left>% / <timeleft>"] 600
 										, Run Kbd [] 
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% %cpu% | %memory% * %swap% | %eth0% - %wlan0% }{ %kbd% | %battery% | <fc=#ee9a00>%date%</fc>"
+       , template = "%StdinReader% %cpu% | %memory% | %eth0% - %wlan0% }{ %kbd% | %battery% | <fc=#b58900>%date%</fc>"
        }
