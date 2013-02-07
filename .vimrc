@@ -2,14 +2,22 @@
 " GENERAL SETTINGS
 "===================================================================================
 
-"call pathogen#infect()
 
 set nocompatible
 
-filetype  plugin on
-filetype	on
+filetype	off
 filetype  indent on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
+Bundle 'gmarik/vundle'
+
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+
+filetype plugin indent on
 syntax    on            " enable syntax highlighting
 
 set backupdir =$HOME/.vim.backupdir
