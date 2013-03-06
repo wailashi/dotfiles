@@ -16,6 +16,10 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
+Bundle 'nvie/vim-rst-tables'
+
+"Show CommandT matches at the bottom of the screen.
+let g:CommandTMatchWindowReverse=true
 
 filetype plugin indent on
 syntax    on            " enable syntax highlighting
