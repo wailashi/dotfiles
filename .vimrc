@@ -19,7 +19,13 @@ Bundle 'scrooloose/syntastic'
 Bundle 'nvie/vim-rst-tables'
 
 "Show CommandT matches at the bottom of the screen.
-let g:CommandTMatchWindowReverse=true
+let g:CommandTMatchWindowReverse=1
+
+"Don't ask to load ycm configurations.
+let g:ycm_confirm_extra_conf = 0
+
+"Enable golang syntax highlight
+set rtp+=/usr/lib/go/misc/vim
 
 filetype plugin indent on
 syntax    on            " enable syntax highlighting
