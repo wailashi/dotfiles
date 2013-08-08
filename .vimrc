@@ -69,6 +69,8 @@ set number 											" Enable row numbering
 set completeopt=menu,menuone,longest " Disable preview scratch window in clang_complete
 set pumheight=15 								" Limit popup menu height
 
+nnoremap <esc> :noh<return><esc> " Clear search highlight when esc is pressed
+
 set background=dark
 colorscheme solarized
 "
